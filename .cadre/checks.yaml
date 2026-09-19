@@ -1,0 +1,5 @@
+checks:
+  - name: tests
+    description: every unittest under tests/
+    command: ["{python}", "-m", "unittest", "discover", "-s", "tests", "-t", "."]
+    timeout: 60
