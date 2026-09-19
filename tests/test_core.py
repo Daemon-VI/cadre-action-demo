@@ -1,3 +1,5 @@
+"""Tests for textstats core functions."""
+
 import unittest
 
 from textstats import reading_time, top_words, word_count, words
