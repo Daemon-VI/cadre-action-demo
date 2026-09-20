@@ -50,7 +50,7 @@ jobs:
           if [ -n "$COMMENT" ]; then goal="${COMMENT#/cadre }"; else goal="$TITLE"$'\n\n'"$BODY"; fi
           { echo "goal<<CADRE_EOF"; printf '%s\n' "$goal" | head -c 4000; echo; echo "CADRE_EOF"; } >> "$GITHUB_OUTPUT"
 
-      - uses: Daemon-VI/cadre@v1
+      - uses: Daemon-VI/cadre@v1.3.0
         with:
           goal: ${{ steps.goal.outputs.goal }}
           org: project-finisher
